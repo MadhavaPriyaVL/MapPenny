@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MapPenny | Track your Expenses </title>
+    <link rel="stylesheet" href="style.css">
+    
+  </head>
+  
+  <body>
+    <header>
+   <nav class="navbar">
+   <div class="logo">MapPenny </div>
+     
+     <button class="menu-toggle" id="menu-toggle">≡</button>
+    <ul class="navlinks" id="nav_links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#features">Features</a></li>
+      <li><a href="#budget">Budget</a></li>
+      <li><a href="#savings">Savings</a></li>
+      <li><a href="#tips">Tips</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li> <button id="theme-toggle"> Dark Mode </button></li>
+    </ul>
+   </nav>
+    </header>
+    <section class="hero" id="home"> 
+    <div class="hero-content">
+      <div class="hero-text">
+    <h1>Take Control of Your Money</h1>
+    <p>Track your income , manage expenses , and build better financial habits.</p>
+    <a class="start-tracking" href="#budget">Start Tracking</a>
+    <a class="explore-features" href="#features">Explore Features </a>
+      </div>
+      <div class="hero-image">
+        <img src="https://images.unsplash.com/photo-1554224155-6726b3ff858f" alt="Personal finance illustration">
+      </div></div>
+    </section>
+    <section id="features">
+      <h2>Smart Tools for Better Money Management</h2>
+    
+    <div class="card">
+      <div class="feature-card" > 
+        <h3>💵 Track Income </h3>
+        <p>Keep a clear record of your monthly earnings.</p>
+    </div></div>
+    <div class="card">
+      <div class="feature-card">
+        <h3>💳 Manage Expenses</h3>
+        <p>Manage your expenses  </p>
+    </div></div>
+      <div class="card">
+        <div class="feature-card">
+          <h3>🎯 Set Savings Goals</h3>
+          <p>Set your savings goals here.</p>
+      </div></div>
+      <div class="card">
+        <div class="feature-card">
+          <h3>📊 Understand Spending</h3>
+          <p> Understand how to spend your money in a better way</p>
+      </div></div>
+    </section>
+    <section id="budget">
+      <h2>Create your monthly budget</h2>
+      <p>Enter your monthly income and expenses to understand how much money remains.</p>
+
+  <div class="income">
+    <form id="budget-form">
+     <strong> <label for="mon-income">Enter your monthly income: <br></label></strong>
+      <input type="number" id="mon-income" class="money-input" required><br><br>
+
+      <strong><label>Enter your Expenses </label></strong><br><br>
+     <label for="rent">Rent:</label><br><br> <input type="number" id="rent" class="money-input"><br><br>
+   <label for="food">   Food:</label><br><br> <input type="number" id="food" class="money-input"><br><br>
+     <label for="transport"> Transport:</label><br><br> <input type="number" id="transport" class="money-input"><br><br>
+     <label for="education"> Education: </label><br><br><input type="number" id="education" class="money-input"><br><br>
+     <label for="other-expenses"> Other expenses:</label> <br><br><input type="number" id="other-expenses" class="money-input"><br><br>
+      <button type="submit">Calculate</button>
+      <h3>Results</h3>
+      <h4>Total Expenses</h4>
+        <p id="total-expenses">₹0</p>
+      <h4>Remaining Balance</h4>
+      <p id="remaining-balance">₹0</p>
+    </form>
+  </div>
+    </section>
+    <section id="savings">
+      <h2>Set your Savings Goal</h2>
+     <p>Track your savings goal quickly</p>
+      <form id="savings-form">
+        <label for="goal">Goal name: </label><br><br>
+        <input id="goal" type="text"><br><br>
+        <label for="target-amt" >Target amount</label><br><br>
+        <input id="target-amt" class="money-input" type="number"><br><br>
+        <label for="amt-saved">Amount saved</label><br><br>
+        <input id="amt-saved" class="money-input" type="number"><br><br>
+      <button type="submit">Set Goal</button>
+      </form>
+
+     <h3> Results </h3>
+      <h4>Goal name</h4>
+      <p id="goal-name-result">not set </p>
+      <h4>Target amount</h4>
+      <p id="target-amt-result">₹0</p>
+      <h4>Amount saved</h4>
+      <p id="amt-saved-result">₹0</p>
+      <h4>Amount remaining</h4>
+      <p id="remaining-balance-result">₹0</p>
+      <h4>Progress percentage</h4>
+      <p id="progress-percent-result">0</p>
+      <progress id="savings-progress" max="100" value="0"></progress>
+    </section>
+
+    <section id="tips">
+      <h2> Smart Financial Tips</h2>
+      <p>Simple habits to help you manage your money and improve your financial health.</p>
+      <div class="tip-card">
+        <p>Tip 1</p>
+       <h3>Follow the 50/30/20 Rule</h3>
+        <ul>
+          <li>50% → Needs </li>
+        <li>30% → Wants </li>
+        <li>20% → Savings </li>
+        </ul>
+      </div>
+<div class="tip-card">
+  <p>Tip 2</p>
+  <h3>Track Every Expense</h3>
+  <p>Know where your money goes.Awareness is the first step to financial control.</p>
+</div>
+    <div class="tip-card">
+      <p>Tip 3</p>
+      <h3>Set Financial Goals</h3>
+      <p>Short-term or long-term,clear goals keep you motivated and focused.</p>
+    </div>
+      <div class="tip-card">
+        <p>Tip 4</p>
+        <h3>Build an Emergency Fund</h3>
+        <p>Save 3-6 months of expenses for unexpected situations.</p>
+      </div>
+      <div class="tip-card">
+        <p>Tip 5</p>
+        <h3>Use Credit Wisely</h3>
+        <p>Avoid unnecessary debt and always pay on time.</p>
+      </div>
+      <div class="tip-card">
+        <p>Tip 6</p>
+        <h3>Invest for the Future</h3>
+        <p>Start small, stay consistent, and let compounding do the magic.</p>
+      </div>
+    </section>
+    <section id="contact">
+      <h3>Get in touch</h3>
+      <form id="contact-form">
+        <label for="contact-name">Name</label><br><br>
+        <input type="text" id="cintact-name"><br><br>
+        <label for="contact-email">Email</label><br><br>
+        <input for="contact-email" type="email"><br><br>
+        <label for="contact-subject">Subject</label><br><br>
+        <input id="contact-subject"  type="text"><br><br>
+        <label for="message">Message</label><br><br>
+       <textarea id="message" rows="5" cols="30"></textarea><br><br>
+        <button type="submit">Submit</button>
+        
+      </form>
+    </section>
+    <script src="script.js"></script>
+
+    <footer class="footer">
+
+  <div class="footer-content">
+
+    <div class="footer-logo">
+      <h2>MapPenny</h2>
+      <p>Take control of your money and build better financial habits.</p>
+    </div>
+
+    <div class="footer-links">
+      <h3>Quick Links</h3>
+      <a href="#home">Home</a>
+      <a href="#features">Features</a>
+      <a href="#budget">Budget</a>
+      <a href="#savings">Savings</a>
+      <a href="#tips">Tips</a>
+      <a href="#contact">Contact</a>
+    </div>
+
+    <div class="footer-author">
+      <h3>About This Website</h3>
+      <p>
+        MapPenny is a personal finance management website
+        created as a web development project.
+      </p>
+      <p class="created-by">
+        Created by <strong>Madhava Priya V L </strong>
+      </p>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    <p>© 2026 MapPenny. All Rights Reserved.</p>
+    <p>Designed & Developed by <strong>Madhava Priya V L</strong></p>
+  </div>
+
+</footer>
+  </body>
+</html>
